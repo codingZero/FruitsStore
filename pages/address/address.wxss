@@ -1,0 +1,64 @@
+
+scroll-view {
+  height: calc(100vh - 100rpx)
+}
+
+.cell {
+  margin: 30rpx;
+}
+
+.info text{
+  margin-right: 20rpx;
+  font-size: 32rpx;
+}
+
+.address {
+  font-size: 28rpx;
+  color: #bbbbbb;
+  display: inline-block;
+  width: 620rpx;
+}
+
+.icon {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  right:0;
+  top: 5rpx;
+}
+
+.operation {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+
+.default {
+  color: orange
+}
+
+.noDef {
+  color: #dddddd
+}
+
+.addAddress {
+  position: fixed;
+  bottom: 0;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-top: 1px solid #eeeeee;
+  text-align: center;
+  width: 100%;
+  background-color: white
+}
+
+.addAddress image {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: 6rpx;
+}
+
+.addAddress text {
+  margin-left: 30rpx;
+  color: #4ba0e4;
+}

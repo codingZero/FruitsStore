@@ -1,0 +1,20 @@
+<view>
+  <view class='userInfo'>
+    <view wx:if='{{userInfo}}' class='info'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+      <text>{{userInfo.username}}</text>
+    </view>
+    <navigator url='../login/login' class='login' wx:else>
+      立即登录
+    </navigator>
+  </view>
+  <view class='function'>
+    <view wx:for='{{itemList}}' wx:key='index' class='group' wx:for-index='index'>
+      <view wx:if='{{index != 1 || i != 1 || userInfo}}' wx:for='{{item}}' wx:for-item='cell' wx:for-index='i' wx:key='{{title}}' class='cell' bindtap='btnClick' id='{{cell.url}}'>
+        <image src='{{cell.icon}}'></image>
+        <text>{{cell.title}}</text>
+        <text wx:if='{{i == 2}}' class='cache'>{{cacheSize}}.0KB</text>
+      </view>
+    </view>
+  </view>
+</view>

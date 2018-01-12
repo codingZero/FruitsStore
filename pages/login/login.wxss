@@ -1,0 +1,58 @@
+.avatar {
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250rpx;
+}
+
+.avatar image {
+  width:150rpx;
+  height:150rpx;
+  border-radius:75rpx;
+}
+
+.info {
+  margin-top: 40rpx;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 40rpx;
+}
+
+.nickName label:first-child {
+  display: inline-block;
+  width: 150rpx;
+  margin-left: 30rpx;
+}
+
+.nickName label:last-child {
+  color: #9a9a9a
+}
+
+.phoneNo {
+  margin-top: 10rpx;
+}
+
+.phoneNo label{
+  margin-left: 30rpx;
+  display: inline-block;
+  width: 150rpx;
+}
+
+.phoneNo input {
+  color: #9a9a9a;
+  display: inline-block;
+  position: relative;
+  top: 12rpx;
+}
+
+.loginBtn {
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.loginBtn button {
+  width: 80%;
+  border-radius: 15rpx;
+  background-color: #4ba0e4;
+  color: white
+}

@@ -1,0 +1,27 @@
+
+.nav {
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1px solid #eeeeee
+}
+
+.nav:first {
+  margin-top: 40rpx;
+}
+
+.item {
+  margin-left: 20rpx;
+  position:relative;
+
+}
+
+.name {
+  font-size: 30rpx;
+  color: #555555
+}
+
+.arrows {
+  position:absolute;
+  right:30rpx;
+  color: #4ba0e4
+}

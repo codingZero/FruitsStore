@@ -1,0 +1,32 @@
+<view>
+  <view wx:if='{{!shoppingList.length}}'>没有商品信息</view>
+  <scroll-view class='content' scroll-y='true'>
+    <view wx:for='{{shoppingList}}' wx:key='objectId' class='item'>
+      <view class='img'>
+        <image src='{{item.foodImage}}' id='{{item.foodId}}' bindtap='toDetail'></image>
+      </view>
+      <view class='detail'>
+        <view class='summary'>
+          <text>{{item.summary}}</text>
+        </view>
+        <view>
+          <text class='price'>￥{{item.foodPrice}}</text>
+          <view class='operation'>
+            <label bindtap='sub' id='{{item.objectId}}'>-</label>
+            <text>{{item.buyCount}}</text>
+            <label bindtap='add' id='{{item.objectId}}'>+</label>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='footer' wx:if='{{shoppingList.length}}'>
+    <view class='sumPrice'>
+      <text>总价：</text>
+      <text>￥{{sumPrice}}</text>
+    </view>
+    <view class='account'>
+      <button bindtap='toOrder'>去结算</button>
+    </view>
+  </view>
+</view>

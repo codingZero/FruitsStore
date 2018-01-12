@@ -1,0 +1,114 @@
+
+.content {
+   height: calc(100vh - 80rpx);
+}
+
+.item {
+  width: 100%;
+  height: 160rpx;
+  margin: 40rpx 30rpx 0;
+}
+
+.item > view {
+  float: left;
+}
+
+.img {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.img image{
+  width: 100%;
+  height: 100%;
+}
+
+.detail {
+  margin: 10rpx 0 0 20rpx;
+  width: 500rpx;
+}
+
+.summary {
+  font-size:30rpx;
+  color:#555555;
+}
+
+.detail > view:last-child {
+  margin-top: 10rpx;
+  position: relative;
+}
+
+.price {
+  font-size:30rpx;
+  color:red;
+}
+
+.operation {
+  display:inline-block;
+  position:absolute;
+  right:0;
+  font-size:30rpx;
+}
+
+.operation label {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #4ba0e4;
+  color: white;
+  border-radius: 25rpx;
+  text-align: center;
+}
+
+.operation label:first-child {
+  margin-right: 30rpx;
+}
+
+.operation label:last-child {
+  margin-left: 30rpx;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  height:80rpx;
+  background-color: white
+}
+
+.sumPrice, 
+.account {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.sumPrice text{
+  line-height: 80rpx;
+}
+
+.sumPrice text:first-child {
+  margin-left: 30rpx;
+  font-size:35rpx;
+  color:#9a9a9a;
+}
+
+.sumPrice text:last-child {
+  font-size:35rpx;
+  color:red;
+}
+
+.account button{
+  background-color: #fac330;
+  color: white;
+  border-radius: 0;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.account button::after {
+  border:  none
+}
+
+

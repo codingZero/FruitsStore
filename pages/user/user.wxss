@@ -1,0 +1,65 @@
+.userInfo {
+  width: 100%;
+  height: 300rpx;
+  background-color: #4ba0e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+}
+
+.info text {
+  display: block;
+  color: white;
+  font-size: 30rpx;
+}
+
+.login {
+  background-color: transparent;
+  color: white;
+  font-size: 30rpx;
+}
+
+.function {
+  margin: 40rpx 20rpx 0;
+}
+
+.group:last-child {
+  margin-top: 40rpx;
+}
+
+.cell {
+  height: 60rpx;
+  padding: 20rpx;
+}
+
+
+.cell image {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: 7rpx; 
+}
+
+.cell text {
+  margin-left: 20rpx;
+  line-height: 60rpx;
+  height: 60rpx;
+  font-size: 35rpx;
+  color: #555555
+}
+
+.cell text.cache {
+  float: right;
+  color: #aaaaaa;
+  font-size: 30rpx;
+}

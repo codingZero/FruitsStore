@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view>
+  <swiper class='swiper' indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+    <block wx:for="{{imageUrls}}" wx:key="index">
+      <swiper-item>
+        <image src='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='fruitsList'>
+    <block wx:for="{{fruitsList}}" wx:key="{{objectId}}">
+      <view class='fruits' bindtap='toDetail' id="{{item.objectId}}">
+        <image src='{{item.image}}'></image>
+        <text class='summary'>{{item.summary}}</text>
+        <text class='price'>￥{{item.price}}</text>
+      </view>
+    </block>
+  </view>
+</view>

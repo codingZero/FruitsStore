@@ -1,0 +1,14 @@
+<view>
+  <view class='avatar'><image src='{{userInfo.avatarUrl}}'></image></view>
+  <view class='info'>
+    <view class='nickName'>
+      <label>昵称</label>
+      <label>{{userInfo.nickName}}</label>
+    </view>
+    <view class='phoneNo'>
+      <label>手机号</label>
+      <input type='number' maxlength='11' placeholder='请输入手机号' bindinput='inputNumber' auto-focus />
+    </view>
+  </view>
+  <view class='loginBtn' bindtap='login'><button>登录</button></view>
+</view>

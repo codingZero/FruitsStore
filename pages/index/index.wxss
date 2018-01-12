@@ -1,0 +1,38 @@
+.swiper {
+  height: 400rpx
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%
+}
+
+.fruitsList {
+  margin: 10rpx
+}
+
+.fruits {
+  width: 230rpx;
+  margin-top: 10rpx;
+  float: left;
+  margin-left: 10rpx;
+}
+
+.fruits image {
+  width: 230rpx;
+  height: 230rpx
+}
+
+.summary {
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+  color: #9a9a9a;
+  font-size: 22rpx;
+  overflow: hidden;
+}
+
+.price {
+  color: #ff0000;
+  font-size: 30rpx;
+}

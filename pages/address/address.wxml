@@ -1,0 +1,24 @@
+<view>
+  <scroll-view scroll-y='true'>
+    <view wx:for='{{addressList}}' class='cell' wx:key='{{objectId}}'>
+      <view class='info'>
+        <text>{{item.name}}</text>
+        <text>{{item.gender == '1'? '先生' : '女士'}}</text>
+        <text>{{item.phone}}</text>
+      </view>
+      <view style='position: relative'>
+        <view class='address'>
+          <text>{{item.address}}</text>
+        </view>
+        <image class='icon' src='../../assets/images/iconfont-edit.png'></image>
+      </view>
+      <view class='operation'>
+        <label class="{{item.is_def? 'default' : 'noDef'}}" bindtap='setDefault' id='{{index}}'>{{item.is_def? '默认地址': '设为默认'}}</label>
+      </view>
+    </view>
+  </scroll-view>
+  <navigator class='addAddress' url='../addAddress/addAddress'>
+    <image src='../../assets/images/iconfont-plus-circle.png'></image>
+    <text>新增地址</text>
+  </navigator>
+</view>

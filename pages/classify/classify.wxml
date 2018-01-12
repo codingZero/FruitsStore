@@ -1,0 +1,10 @@
+<view>
+  <scroll-view>
+    <navigator url='' wx:for='{{classify}}' wx:key='{{item._id}}' id='{{item._id}}' bindtap='navigateTo' class='nav'>
+      <view class='item'>
+        <text class='name'>{{item.name}}</text>
+        <text class='arrows'>></text>
+      </view>
+    </navigator>
+  </scroll-view>
+</view>

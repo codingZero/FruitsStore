@@ -1,0 +1,9 @@
+<view class='fruitsList'>
+    <block wx:for="{{fruitsList}}" wx:key="{{objectId}}">
+      <view class='fruits' bindtap='toDetail' id="{{item.objectId}}">
+        <image src='{{item.image}}'></image>
+        <text class='summary'>{{item.summary}}</text>
+        <text class='price'>￥{{item.price}}</text>
+      </view>
+    </block>
+  </view>

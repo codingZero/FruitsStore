@@ -1,0 +1,80 @@
+.view {
+  padding: 40rpx;
+}
+
+.gender label {
+  font-size: 35rpx;
+}
+
+.gender label:last-child {
+  margin-left: 30rpx;
+}
+
+.gender radio {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+  position: relative;
+  top: -4rpx;
+}
+
+
+
+.addressInfo {
+  margin-top: 60rpx;
+}
+
+.addressInfo view {
+  font-size: 35rpx;
+  margin-top: 50rpx;
+}
+
+.addressInfo view text:first-child {
+  width: 180rpx;
+  display: inline-block 
+}
+
+.addressInfo input{
+  position: absolute;
+  display: inline-block;
+}
+
+.addressInfo .address {
+  display: inline-block;
+  width: 440rpx; 
+  margin-left: 180rpx;
+}
+
+.addressInfo image {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 0;
+  top: 5rpx;
+}
+
+.def {
+  margin-top: 60rpx;
+  font-size: 35rpx;
+  height: 90rpx;
+}
+
+.def label {
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.def switch{
+  float: right;
+}
+
+.submit {
+  margin-top: 60rpx;
+  width: 80%;
+  background-color: #4ba0e4;
+  color: white;
+}
+
+.submit::after {
+  border: none
+}

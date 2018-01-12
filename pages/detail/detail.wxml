@@ -1,0 +1,25 @@
+<view>
+  <scroll-view>
+    <view class='image'><image src='{{food.image}}'></image></view>
+    <view class='summary'><text>{{food.summary}}</text></view>
+    <view>
+      <text class='price'>￥{{food.price}}</text>
+      <text class='count'>库存：{{food.count}}件</text>
+    </view>
+    <view class='introduce'><text>{{food.introduce}}</text></view>
+  </scroll-view>
+  <view class='footer'>
+    <view class='buyCount'>
+      <text>购买数量</text>
+      <view>
+        <label bindtap='changeCount' id='sub'>-</label>
+        <text>{{count}}</text>
+        <label bindtap='changeCount' id='add'>+</label>
+      </view>
+    </view>
+    <view class='btn'>
+      <button bindtap='addToCar'>加入购物车</button>
+      <button bindtap='buyNow'>立即购买</button>
+    </view>
+  </view>
+</view>
