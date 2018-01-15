@@ -1,0 +1,32 @@
+<view class='view'>
+  <form bindsubmit='submit' class='form'>
+    <view class='gender'>
+      <radio-group name='gender'>
+        <label wx:for='{{gender}}'>
+          <radio value='{{item.value}}' checked='{{address.gender == item.value}}' color='#4ba0e4'/>
+          {{item.name}}
+        </label>
+      </radio-group>
+    </view>
+    <view class='addressInfo'>
+      <view>
+        <text>收货人</text> 
+        <input placeholder='请输入收货人姓名' name='name' value='{{address.name}}'></input>
+      </view>
+      <view>
+        <text>联系电话</text>
+        <input placeholder='请输入收货人电话' type='number' maxlength='11' name='phone' value='{{address.phone}}'></input>
+      </view>
+      <view bindtap='chooseLocation' style='position: relative'>
+        <text style='position: absolute'>联系地址</text>
+        <text class='address'>{{chooseAddress}}</text>
+        <image src='../../assets/images/iconfont-addr-default.png'></image>
+      </view>
+    </view>
+    <view class='def'>
+      <label>设为默认<switch name='is_def' checked='{{address.is_def}}'></switch></label>
+    </view>
+    <button form-type='submit' class='submit'>确定</button>
+    <button bindtap='delAddress' class='delete'>删除</button>
+  </form>
+</view>

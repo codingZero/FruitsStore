@@ -10,7 +10,9 @@
         <view class='address'>
           <text>{{item.address}}</text>
         </view>
-        <image class='icon' src='../../assets/images/iconfont-edit.png'></image>
+        <view bindtap='editAddress' id='{{item.objectId}}'>
+          <image class='icon' src='../../assets/images/iconfont-edit.png'></image>
+        </view>
       </view>
       <view class='operation'>
         <label class="{{item.is_def? 'default' : 'noDef'}}" bindtap='setDefault' id='{{index}}'>{{item.is_def? '默认地址': '设为默认'}}</label>

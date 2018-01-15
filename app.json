@@ -1,15 +1,16 @@
 {
   "pages": [
+    "pages/address/address",
     "pages/index/index",
     "pages/cart/cart",
     "pages/addAddress/addAddress",
-    "pages/address/address",
     "pages/user/user",
     "pages/classify/classify",
     "pages/detail/detail",
     "pages/login/login",
     "pages/order/order",
-    "pages/classifyDetail/classifyDetail"
+    "pages/classifyDetail/classifyDetail",
+    "pages/editAddress/editAddress"
   ],
   "window": {
     "backgroundTextStyle": "light",

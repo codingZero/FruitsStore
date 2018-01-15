@@ -35,19 +35,32 @@ Page({
           if (res.length > 0) {
             res[0].set('is_def', false)
             res[0].save()
-            address.set('is_def', true)
-            address.save()
             for (let ad of addressList) {
               if (ad.id === res[0].id) {
                 ad.set('is_def', false)
                 break;
               }
             }
-            addressList[index] = address
-            that.setData({addressList})
+            that.changeDefault(index)
+          } else {
+            that.changeDefault(index)
           }
         }
       })
     }
+  },
+  changeDefault: function(index) {
+    let addressList = this.data.addressList
+    let address = addressList[index]
+    address.set('is_def', true)
+    address.save()
+    addressList[index] = address
+    this.setData({ addressList })
+  },
+  editAddress: function (e) {
+    let id = e.currentTarget.id
+    wx.navigateTo({
+      url: '../editAddress/editAddress?id=' + id,
+    })
   }
 })
