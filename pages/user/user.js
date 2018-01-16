@@ -9,7 +9,7 @@ Page({
         {
           title: '我的订单',
           icon: '../../assets/images/iconfont-order.png',
-          url: '../order/order'
+          url: '../myOrder/myOrder'
         },
         {
           title: '收货地址',

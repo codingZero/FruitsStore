@@ -1,0 +1,28 @@
+<view>
+  <scroll-view scroll-y='true'>
+    <view wx:for='{{orderList}}' class='order'>
+      <view class='foods'>
+        <view wx:for='{{item.foods}}' class='food'>
+        <view class='picture'>
+          <image src='{{item.foodImage}}'></image>
+        </view>
+        <view class='info'>
+          <view class='summary'>{{item.summary}}</view>
+          <view class='price'>
+            <text>￥{{item.foodPrice}}</text>
+            <text>x{{item.buyCount}}</text>
+          </view>
+        </view>
+      </view>
+      </view>
+      <view class='totalPrice'>
+        订单总价总价：
+        <text>￥{{item.price}}</text>
+      </view>
+      <view class='btn'>
+        <button>联系商家</button>
+        <button>再来一单</button>
+      </view>
+    </view>
+  </scroll-view>
+</view>

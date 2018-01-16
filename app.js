@@ -46,6 +46,7 @@ App({
     count: null,
     limit: 6,
     fruitsList:null,
-    userInfo: null
+    userInfo: null,
+    shoppingList: null
   }
 })

@@ -1,0 +1,96 @@
+scroll-view {
+  height: 100vh;
+  background-color: #eeeeee
+}
+
+.order {
+  margin-top: 20rpx;
+  background-color: white;
+}
+
+.order:last-child {
+  margin-bottom: 20rpx;
+}
+
+.foods {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.food {
+  padding: 20rpx 30rpx;
+  width: 100%;
+  overflow: hidden; 
+}
+
+.food .picture {
+  width: 150rpx;
+  height: 150rpx;
+  float: left
+}
+
+.food .picture image {
+  width: 100%;
+  height: 100%;
+}
+
+.food .info {
+  float: left;
+  margin-left: 30rpx;
+  width: 520rpx;
+}
+
+.summary {
+  font-size: 35rpx;
+  margin-top: 10rpx;
+}
+
+.price {
+  margin-top: 20rpx;
+}
+
+.price text:first-child {
+  color: red;
+  font-size: 35rpx;
+}
+
+.price text:last-child {
+  color: #9a9a9a;
+  font-size: 30rpx;
+  float: right;
+}
+
+.totalPrice {
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 20rpx;
+  font-size: 35rpx;
+}
+
+.totalPrice text {
+  color: red;
+}
+
+.btn {
+  height: 80rpx;
+}
+
+.btn button {
+  float: left;
+  width: 50%;
+  height: 100%;
+  line-height: 80rpx;
+  border-radius: 0;
+  color: #4ba0e4;
+  background-color: white;
+  border-bottom: 1rpx solid #eeeeee;
+  border-top: 1rpx solid #eeeeee;
+  font-size: 35rpx;
+}
+
+.btn button:first-child {
+  border-right: 1rpx solid #eeeeee
+}
+
+.btn button::after {
+  border: none;
+}

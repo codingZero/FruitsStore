@@ -1,2 +1,38 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<view>
+  <scroll-view scroll-y='true'>
+    <view class='takeAddress'>
+      <view>
+        <image src='../../assets/images/iconfont-addr-default.png' style='width: 100%; height: 100%'></image>
+      </view>
+      <view>
+        <view class='userInfo'>
+          <text>{{address.name}}</text>
+          <text>{{address.gender == '1'? '先生' : '女士'}}</text>
+          <text>{{address.phone}}</text>
+        </view>
+        <view class='address'>{{address.address}}</view>
+      </view>
+      <view style='color: #9a9a9a'>></view>
+    </view>
+    <view class='list'>
+      <view wx:for='{{shoppingList}}' class='shopping'>
+        <view class='picture'>
+          <image src='{{item.foodImage}}'></image>
+        </view>
+        <view class='info'>
+          <view class='summary'>{{item.summary}}</view>
+          <view class='price'>
+            <text>￥{{item.foodPrice}}</text>
+            <text>x{{item.buyCount}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='footer'>
+    <view class='sumPrice'>总价格：
+      <text>￥{{sumPrice}}</text>
+    </view>
+    <button class='submit' bindtap='submitOrder'>提交订单</button>
+  </view>
+</view>

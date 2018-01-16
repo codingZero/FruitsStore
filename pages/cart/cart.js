@@ -22,10 +22,10 @@ Page({
     })
   },
   toOrder: function () {
-    let shoppingList = this.data.shoppingList
     let sumPrice = this.data.sumPrice
+    app.globalData.shoppingList = this.data.shoppingList
     wx.navigateTo({
-      url: '../order/order?shoppingList=' + shoppingList + '&sumPrice=' + sumPrice,
+      url: '../order/order?sumPrice=' + sumPrice + '&flag=1',
     })
   },
   changeShopping: function (id, flag) {

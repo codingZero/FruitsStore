@@ -19,7 +19,7 @@ Page({
     let food = Bmob.Object.extend('Food')
     let query = new Bmob.Query(food)
     let that = this
-    util.getNetworkType(function(){
+    util.getNetworkType(function () {
       util.showLoading()
       query.get(id, {
         success: function (result) {
@@ -91,18 +91,18 @@ Page({
   },
   buyNow: function () {
     if (app.globalData.userInfo) {
-      let Order = Bmob.Object.extend('Order')
-      let order = new Order()
       let food = this.data.food
-      order.set('buyCount', this.data.count)
-      order.set('food', [food])
-      order.set('price', food.price * this.data.count)
-      order.save(null, {
-        success: function (result){
-          wx.redirectTo({
-            url: '../order/order?order=' + result,
-          })
-        }
+      let sumPrice = food.price * this.data.count
+      let shoppingList = [{
+        'foodImage': food.image,
+        'summary': food.summary,
+        'buyCount': this.data.count,
+        'foodPrice': food.price,
+        'foodId': this.data.foodId
+      }]
+      app.globalData.shoppingList = shoppingList
+      wx.redirectTo({
+        url: '../order/order?sumPrice=' + sumPrice + '&flag=0',
       })
     } else {
       util.toLogin()
